@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{ 
+    box-shadow: 0 8px 8px -6px black;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+}
+ul{
+    list-style-type: none;
+    background-color: #ff4d4d;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+li:hover{
+    color: #ff4d4d;
+    background-color: rgb(201, 200, 200);
+    transition: 0.5s ease-in-out;
+}
+
+.wrapper1{
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.wrapper1 h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.wrapper1 button{
+    margin-top: 30px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #810f0fe7;
+    outline-color: brown;
+    font-size: 20px;
+    box-shadow: 0px 4px 2px -3px black;
+    outline: none;
+}
+
+.wrapper1 button:hover{
+    background-color: #810f0f4b;
+    transform: translate(2px, 3px);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.sec1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+}
+
+i.fa-anchor{
+    text-align: center;
+    font-size: 13rem;
+    color: #ff4d4d;
+    /* padding-top: 30px;
+    padding-left: 50px; */
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #F0F0F0;
+    padding-bottom: 30px;
+}
+i.fa-coffee{
+    font-size: 13rem;
+    color: #ff4d4d;
+    padding-left: 70px;
+    padding-top: 17px;
+    margin-right: 20px;
+}
+.light{
+    color: rgba(0, 0, 0, 0.61);
+}
+.quotes{
+    
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    background-color: grey;
+}
+
+.footer__icons {
+    text-align: center;
+    padding-top: 30px;
+}
+.footer{
+    text-align: center;
+}
