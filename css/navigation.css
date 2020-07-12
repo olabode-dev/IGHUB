@@ -6,6 +6,17 @@
 html{
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #fc5959;
+}
+body::-webkit-slider-thumb{
+    background: #fcdede;
+}
 nav{ 
     box-shadow: 0 8px 8px -6px black;
     position: fixed;
