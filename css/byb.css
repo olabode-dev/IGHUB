@@ -1,0 +1,252 @@
+/* browser style reset */
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: black;
+    background: #E5E5E5;
+}
+
+.header{
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color:  #1E73E8;
+    height: 50px;
+}
+/* header navigation styling */
+.byb{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+    padding-right: 20px;
+    border-right: white 1px solid;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.byb__face{
+    display: flex;
+    padding: 7px;
+}
+
+.pro{
+    display: flex;
+}
+.set{
+    margin-right: 13px;
+}
+.set_d{
+    background:  #78ABF1;
+    padding: 5px;
+    font-size: 2rem;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.w_fb{
+    color: white;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+.profile{
+    font-size: 2rem;
+    padding: 6px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+}
+/* end of header navigation styling */
+
+/* styling the orientation of the page */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 5%;
+}
+
+/* removing bullent points and number on lists */
+.lists > ul{
+    list-style-type: none;
+    text-decoration: none; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul > li {
+    /* margin-bottom: 10px; */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid black; 
+    /* font-size: 1.2rem; */
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* effect while hovering over te side navigation elements */
+ul > li:hover {
+    background: #1E73E8;
+    color: white;
+    transition: 0.6s ease-out;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav_lists  a:hover{
+    color: white;
+    cursor: pointer;
+}
+.lists:hover{
+    color: white;
+}
+
+.muted{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #4F4F4F;
+    margin-top: 1.2%;
+    margin-bottom: 1.8%;
+    letter-spacing: 0.03em;
+}
+
+.str{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+}
+.edit{
+    background: #FFFFFF;
+    border-radius: 6px;
+    width: 70%;
+    padding-top: 3%;
+    padding-left: 1%;
+}
+
+.edit > ol {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    color: #4F4F4F;
+}
+
+/* beginning of button styling  */
+.btn > button{
+    height: 50px;
+    width: 60%;
+    margin-top: 25px;
+    background: #1E73E8;
+    color: #FFFFFF;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    outline: none;
+    outline: #1E73E8;
+    font-size: 1.3rem;
+}
+
+.btn > button:hover{
+    background-color: rgb(4, 61, 141);
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+/* end of button styling */
+ol{
+    list-style-type: none;
+}
+ol > li{
+    margin-bottom: 7px;
+}
+
+
+
+.stats{
+    margin-top: 45px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+.stats__data{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    
+    margin-top: 20px; 
+}
+
+/* summary styling */
+.approved, .earnings, .booked{
+    background: white;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 43px;
+}
+
+/* special styling for elements in the summary */
+span{
+    color: #32A636;
+    text-decoration: line-through;
+}
+.earnings > h2{
+    color: #32A636;
+}
+.stats__data > p {
+    font-size: 4px;
+}
+
+/* styling the footer elments */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5%;
+    height: 44px;
+    background-color:  #1E73E8;
+    color: white;
+    font-size: 1rem;
+}
+.footer > div{
+    padding-top: 10px;
+}
+
+
