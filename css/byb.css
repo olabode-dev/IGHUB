@@ -220,6 +220,16 @@ ol > li{
     line-height: 43px;
 }
 
+.booked:hover{
+    border: 3px solid #32A636;
+}
+.approved:hover{
+    border: 3px solid #32A636;
+}
+.earnings:hover{
+    border: 3px solid #32A636;
+}
+
 /* special styling for elements in the summary */
 span{
     color: #32A636;
