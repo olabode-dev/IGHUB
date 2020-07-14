@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/byb.css">
+        <link rel="stylesheet" href="/css/session.css">
     </head>
     <body>
         <!-- header of the page -->
@@ -49,37 +49,30 @@
                     <li><a href="">Join our community</a></li>
                 </ul>
             </div>
-            <!-- right grid, containing most data -->
-            <div class="main__grid">
-                <p class="str">Welcome to trainer's name</p><br>
-                <p class="muted">Carefully read before you proceed </p>
-                <!-- procedures -->
-                <div class="edit">
-                    <ol>
-                        <li>1. Update your profile and bank details before you proceed!</li>
-                        <li>2. Carefully check the information you enter while booking a session</li>
-                        <li>3. You can only book a session at least 7 days before the proposed date.</li>
-                        <li>4. Remember to log in and check for the session approval before due date.</li>
-                        <li>5. Reports are to be made within 24 hours of training.</li>
-                    </ol>
-                    <!-- summit button -->
-                    <div class="btn">
-                        <button type="submit">Edit profile and Continue</button>
+            <div class="register">
+                <p class="schedule">Schedule a training session</p>
+                <form action="" class="form_section">
+                    <p class="form_para">Please note that you are to fill the form, a minimum of 7 days before your proposed date.</p>
+                    <div class="form_elements">
+                        <input type="text" name="name" id="name" placeholder="Josh" />
+                        <input type="text" name="name" id="name" placeholder="Onwughalu" />
+                        <input type="email" name="email" id="email" placeholder="Kreativejosh@gmail.com" />
+                        <input type="text" name="name_o" id="name_o" placeholder="Name of Organisation" />
+                        <input type="text" name="nos" id="nos" placeholder="Expected Nos of participants" />
+                        <input type="text" name="venue" id="venue" placeholder="Training venue" />
+                        <select name="name" id="name">
+                          <option value="Proposed LGA">Proposed LGA</option>
+                        </select>
+                        <input type="text" name="date" id="date" placeholder="Proposed training date " />
+                        <input type="text" name="name" id="time" placeholder="Proposed time" class="time"/>
+                        <button type="submit" class="save">Save and continue</button>
                     </div>
-                </div>
-                <!-- training text -->
-                <div class="stats">
-                    <p>Training Statistics</p>
-                </div>
-                <!-- total results or summary of bookingf session -->
-                <div class="stats__data">
-                    <div class="booked"><h2>782</h2>
-                    <p class="mut">Total training booked</p></div>
-                    <div class="approved"><h2>426</h2><p class="mut">Total training approved</p></div>
-                    <div class="earnings"><h2><span>N</span>725,852</h2><p class="mut">Total earnings</p></div>
-                </div>
+                   
+                </form>
             </div>
+           
         </div>
+            
 
         <!-- footer html -->
         <footer>

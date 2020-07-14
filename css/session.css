@@ -13,7 +13,7 @@ body{
     color: black;
     background: #E5E5E5;
 }
-
+/* header outline */
 .header{
     padding-left: 8%;
     padding-right: 8%;
@@ -33,7 +33,6 @@ body{
     margin-right: 20px;
     cursor: pointer;
 }
-
 .nav__list{
     display: flex;
     justify-content: space-between;
@@ -58,6 +57,9 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
+}
+.set_d:hover{
+    background:  rgba(19, 81, 167, 0.466);
 }
 .w_fb{
     color: white;
@@ -84,7 +86,6 @@ body{
     margin-right: 8%;
     margin-top: 5%;
 }
-
 /* removing bullent points and number on lists */
 .lists > ul{
     list-style-type: none;
@@ -97,11 +98,10 @@ a{
 }
 
 ul > li {
-    /* margin-bottom: 10px; */
+   
     padding-bottom: 15px;
     padding-top: 15px;
     border-top: 1px solid black; 
-    /* font-size: 1.2rem; */
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -124,124 +124,81 @@ ul > li:hover {
 .lists:hover{
     color: white;
 }
-
-.muted{
+/* styling of the other part of the grid */
+/* header text stling */
+.schedule{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+    letter-spacing: 0.03em;
+}
+.form_para{
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    color: #4F4F4F;
-    margin-top: 1.2%;
-    margin-bottom: 1.8%;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 0.03em;
-}
-.mut{
-    color: #4f4f4f;
+    margin-bottom: 3%;
+    color: #4F4F4F;
 }
 
-.str{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-}
-.edit{
+.form_section{
     background: #FFFFFF;
-    border-radius: 6px;
-    width: 70%;
-    padding-top: 3%;
-    padding-left: 1%;
+    margin-top: 3%;
+    padding: 3%;
+    width: 100%;
+    border-radius: 5px;
 }
 
-.edit > ol {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 0.03em;
+input, select{
+    height: 75px;
+    background: #F2F2F2;
+    border-radius: 6px;
+    border: #F2F2F2;
+    outline: #F2F2F2;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+/* putting the form in a sub grid */
+.form_elements{
+    padding-left: 4%;
+    padding-right: 4%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+/* styling of select and time grid*/
+select{
     color: #4F4F4F;
+    opacity: 0.8;
+} 
+.time{
+    grid-column: 1/3;
 }
 
 /* beginning of button styling  */
-.btn > button{
-    height: 50px;
-    width: 60%;
-    margin-top: 25px;
+.save{
+    grid-column: 1/3;
     background: #1E73E8;
     color: #FFFFFF;
-    margin-left: 3%;
-    margin-bottom: 5%;
-    border-radius: 6px;
+    height: 75px;
+    margin-top: 10px;
+    font-size: 1.4rem;
     outline: none;
-    outline: #1E73E8;
-    font-size: 1.3rem;
+    border: none;
+    border-radius: 6px;
 }
-
-.btn > button:hover{
+.save:hover{
     background-color: rgb(4, 61, 141);
     transition: 0.5s ease;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 /* end of button styling */
-ol{
-    list-style-type: none;
-}
-ol > li{
-    margin-bottom: 7px;
-}
-.stats{
-    margin-top: 45px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-}
-.stats__data{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
-    display: flex;
-    
-    margin-top: 20px; 
-}
-
-/* summary styling */
-.approved, .earnings, .booked{
-    background: white;
-    margin-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 10px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 43px;
-}
-
-.booked:hover{
-    border: 3px solid #32A636;
-}
-.approved:hover{
-    border: 3px solid #32A636;
-}
-.earnings:hover{
-    border: 3px solid #32A636;
-}
-
-/* special styling for elements in the summary */
-span{
-    color: #32A636;
-    text-decoration: line-through;
-}
-.earnings > h2{
-    color: #32A636;
-}
-.stats__data > p {
-    font-size: 4px;
-}
-
 /* styling the footer elments */
 .footer{
     display: flex;
@@ -258,5 +215,4 @@ span{
 .footer > div{
     padding-top: 10px;
 }
-
 
